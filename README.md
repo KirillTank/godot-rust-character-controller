@@ -82,7 +82,7 @@ Handles:
 
 ## Requirements
 
-* Godot 4.x
+* Godot 4.7
 * Rust
 * rust-godot 0.5.x
 
