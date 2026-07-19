@@ -106,7 +106,6 @@ Input Map:
 left
 right
 jump
-attack
 ```
 
 ---
