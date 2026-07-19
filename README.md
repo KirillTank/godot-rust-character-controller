@@ -1,6 +1,6 @@
 # Godot Rust Character Controller
 
-A reusable 2D character controller for Godot 4 built with Rust and rust-godot.
+A reusable 2D character controller for Godot 4.7 built with Rust and rust-godot.
 
 This project demonstrates a clean implementation of a 2D platformer controller using a finite state machine (FSM), animation management, and input handling.
 
