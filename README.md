@@ -1,68 +1,151 @@
 # Godot Rust Character Controller
 
-A reusable 2D character controller for Godot 4 written in Rust using rust-godot.
+A reusable 2D character controller for Godot 4 built with Rust and rust-godot.
 
-This project demonstrates a clean separation between character movement, animation handling, and state management. The controller is built around a finite state machine (FSM) architecture, making it easy to extend and integrate into platformer, action, or RPG projects.
+This project demonstrates a clean implementation of a 2D platformer controller using a finite state machine (FSM), animation management, and input handling.
+
+---
 
 ## Features
 
-* Finite State Machine (FSM)
-* Idle State
-* Run State
-* Fall State
-* Attack State
-* Animation Controller
-* Sprite Animation Management
-* CharacterBody2D Integration
-* Modular Architecture
-* Written entirely in Rust
+### Movement
 
-## Architecture
+* Horizontal movement
+* Gravity system
+* Jump mechanics
+* Air movement
+
+### Finite State Machine
+
+The controller uses a state machine to manage character behavior.
+
+Available states:
+
+* Idle
+* Run
+* Fall
+* Attack
+
+### Animation System
+
+* Sprite animation playback
+* AnimationPlayer support
+* Animation state synchronization
+* Horizontal sprite flipping
+
+### Input Handling
+
+Supported actions:
+
+| Action     | Input Action |
+| ---------- | ------------ |
+| Move Left  | left         |
+| Move Right | right        |
+| Jump       | jump         |
+| Attack     | attack       |
+
+---
+
+## Project Structure
+
+```text
+src/
+└── player.rs
+```
+
+Main components:
+
+### State
+
+Responsible for character state transitions.
+
+```rust
+enum State {
+    Idle,
+    Run,
+    Fall,
+    Attack,
+}
+```
 
 ### AnimationController
 
-Responsible for:
+Handles:
 
-* Sprite animation playback
-* AnimationPlayer control
+* Sprite playback
+* AnimationPlayer playback
 * Animation state tracking
-* Character orientation checks
+* Signal integration
 
 ### MovementController
 
-Responsible for:
+Handles:
 
+* Velocity
+* Gravity
+* Jump force
 * Horizontal movement
-* Gravity simulation
-* Jump configuration
-* Velocity calculations
-* Input-driven movement data
+* Input values
 
-### Player
+---
 
-Main gameplay controller that combines movement, animation, and state management into a single reusable component.
+## Requirements
 
-## Technologies
-
+* Godot 4.x
 * Rust
-* Godot 4
-* rust-godot
+* rust-godot 0.5.x
 
-## Project Goals
+---
 
-This project was created to explore game development with Rust and demonstrate practical usage of:
+## Scene Setup
 
-* State machines
-* Godot node interaction
+Required node structure:
+
+```text
+Player (CharacterBody2D)
+├── anim
+│   ├── Player (AnimationPlayer)
+│   ├── Sprite (AnimatedSprite2D)
+│   └── Area2D
+```
+
+Input Map:
+
+```text
+left
+right
+jump
+attack
+```
+
+---
+
+## Demo
+
+Add a GIF or video preview here.
+
+Recommended showcase:
+
+* Idle
+* Run
+* Jump
+* Fall
+* Attack
+
+---
+
+## Purpose
+
+This project was created to demonstrate:
+
+* Rust game development
+* Godot 4 integration
+* State machine architecture
 * Animation systems
-* Modular game architecture
-* Rust game programming patterns
+* Character controller design
 
-## Future Improvements
+---
 
-* Jump State
-* Death State
-* Combo Attacks
-* Air Control
-* Save System Integration
-* Multiplayer Support
+## License
+
+MIT
