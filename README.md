@@ -124,15 +124,6 @@ Recommended showcase:
 
 ---
 
-## Purpose
-
-This project was created to demonstrate:
-
-* Rust game development
-* Godot 4 integration
-* State machine architecture
-* Animation systems
-* Character controller design
 
 ---
 
