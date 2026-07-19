@@ -42,7 +42,6 @@ Supported actions:
 | Move Left  | left         |
 | Move Right | right        |
 | Jump       | jump         |
-| Attack     | attack       |
 
 ---
 
