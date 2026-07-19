@@ -45,13 +45,6 @@ Supported actions:
 
 ---
 
-## Project Structure
-
-```text
-src/
-└── player.rs
-```
-
 Main components:
 
 ### State
@@ -63,7 +56,6 @@ enum State {
     Idle,
     Run,
     Fall,
-    Attack,
 }
 ```
 
