@@ -1,3 +1,5 @@
+<img width="1280" height="720" alt="output" src="https://github.com/user-attachments/assets/73b32c1e-fde5-422f-8d49-dfa1898e6a43" />
+<img width="1280" height="720" alt="output" src="https://github.com/user-attachments/assets/4f279fdd-c787-4312-89cb-d8fda634e3aa" />
 # Godot Rust Character Controller
 
 A reusable 2D character controller for Godot 4.7 built with Rust and rust-godot.
