@@ -128,4 +128,4 @@ Recommended showcase:
 
 ## License
 
-MIT
+Apache
